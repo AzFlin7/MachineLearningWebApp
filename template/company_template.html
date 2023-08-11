@@ -1,0 +1,5 @@
+<form method="POS" enctype="multipart/form-data" action="predictStockPrice">
+    {% csrf_token %}
+    {{ form.as_p }}
+    <input type="submit" value="Predict" class="btn btn-md btn-secondary">
+</form>
